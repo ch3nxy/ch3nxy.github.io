@@ -11,7 +11,7 @@
   --fourth-text-color: #eaeced;
   --default-text-color: #373d3f;
   --invert-text-color: #bebec6;
-  --border-color: #b3b3b3;
+  --border-color: rgba(0,0,0,0.08);
   --selection-color: #2284e5;
   --shadow-color-1: rgba(0,0,0,0.08);
   --shadow-color-2: rgba(0,0,0,0.05);
@@ -23,7 +23,7 @@
   --copyright-info-color: #c03;
   --avatar-background-color: #06c;
   --pjax-progress-bar-color: linear-gradient(45deg, #f10006, #ef5b00, #e59c01, #19ca05, #00cab5, #0264c8, #c303c3);
-  --archive-timeline-last-child-color: linear-gradient(to bottom, rgba(0,0,0,0.3) 60%, rgba(0,0,0,0) 100%) 1 100%;
+  --archive-timeline-last-child-color: linear-gradient(to bottom, #e8e8e8 60%, rgba(0,0,0,0) 100%) 1 100%;
   --note-blue-title-bg: #d6f7fb;
   --note-red-title-bg: #fde9e9;
   --note-cyan-title-bg: #e9fdf9;
@@ -57,7 +57,7 @@
     --fourth-text-color: #eaeced;
     --default-text-color: #373d3f;
     --invert-text-color: #bebec6;
-    --border-color: #b3b3b3;
+    --border-color: rgba(0,0,0,0.08);
     --selection-color: #2284e5;
     --shadow-color-1: rgba(0,0,0,0.08);
     --shadow-color-2: rgba(0,0,0,0.05);
@@ -69,7 +69,7 @@
     --copyright-info-color: #c03;
     --avatar-background-color: #06c;
     --pjax-progress-bar-color: linear-gradient(45deg, #f10006, #ef5b00, #e59c01, #19ca05, #00cab5, #0264c8, #c303c3);
-    --archive-timeline-last-child-color: linear-gradient(to bottom, rgba(0,0,0,0.3) 60%, rgba(0,0,0,0) 100%) 1 100%;
+    --archive-timeline-last-child-color: linear-gradient(to bottom, #e8e8e8 60%, rgba(0,0,0,0) 100%) 1 100%;
     --note-blue-title-bg: #d6f7fb;
     --note-red-title-bg: #fde9e9;
     --note-cyan-title-bg: #e9fdf9;
@@ -104,7 +104,7 @@
     --fourth-text-color: #242429;
     --default-text-color: #bebec6;
     --invert-text-color: #373d3f;
-    --border-color: #4a4c53;
+    --border-color: rgba(255,255,255,0.08);
     --selection-color: #2284e5;
     --shadow-color-1: rgba(255,255,255,0.08);
     --shadow-color-2: rgba(255,255,255,0.05);
@@ -116,7 +116,7 @@
     --copyright-info-color: #a30029;
     --avatar-background-color: #005cb8;
     --pjax-progress-bar-color: linear-gradient(45deg, #ea404a, #ea722f, #e9a71f, #67e559, #18ecec, #1b85f1, #ee1dee);
-    --archive-timeline-last-child-color: linear-gradient(to bottom, rgba(180,180,180,0.3) 60%, rgba(255,255,255,0) 100%) 1 100%;
+    --archive-timeline-last-child-color: linear-gradient(to bottom, #323232 60%, rgba(255,255,255,0) 100%) 1 100%;
     --note-blue-title-bg: #1e3e46;
     --note-red-title-bg: #4e1e1e;
     --note-cyan-title-bg: #1e4e4e;
@@ -150,7 +150,7 @@
   --fourth-text-color: #eaeced;
   --default-text-color: #373d3f;
   --invert-text-color: #bebec6;
-  --border-color: #b3b3b3;
+  --border-color: rgba(0,0,0,0.08);
   --selection-color: #2284e5;
   --shadow-color-1: rgba(0,0,0,0.08);
   --shadow-color-2: rgba(0,0,0,0.05);
@@ -162,7 +162,7 @@
   --copyright-info-color: #c03;
   --avatar-background-color: #06c;
   --pjax-progress-bar-color: linear-gradient(45deg, #f10006, #ef5b00, #e59c01, #19ca05, #00cab5, #0264c8, #c303c3);
-  --archive-timeline-last-child-color: linear-gradient(to bottom, rgba(0,0,0,0.3) 60%, rgba(0,0,0,0) 100%) 1 100%;
+  --archive-timeline-last-child-color: linear-gradient(to bottom, #e8e8e8 60%, rgba(0,0,0,0) 100%) 1 100%;
   --note-blue-title-bg: #d6f7fb;
   --note-red-title-bg: #fde9e9;
   --note-cyan-title-bg: #e9fdf9;
@@ -195,7 +195,7 @@
   --fourth-text-color: #242429;
   --default-text-color: #bebec6;
   --invert-text-color: #373d3f;
-  --border-color: #4a4c53;
+  --border-color: rgba(255,255,255,0.08);
   --selection-color: #2284e5;
   --shadow-color-1: rgba(255,255,255,0.08);
   --shadow-color-2: rgba(255,255,255,0.05);
@@ -207,7 +207,7 @@
   --copyright-info-color: #a30029;
   --avatar-background-color: #005cb8;
   --pjax-progress-bar-color: linear-gradient(45deg, #ea404a, #ea722f, #e9a71f, #67e559, #18ecec, #1b85f1, #ee1dee);
-  --archive-timeline-last-child-color: linear-gradient(to bottom, rgba(180,180,180,0.3) 60%, rgba(255,255,255,0) 100%) 1 100%;
+  --archive-timeline-last-child-color: linear-gradient(to bottom, #323232 60%, rgba(255,255,255,0) 100%) 1 100%;
   --note-blue-title-bg: #1e3e46;
   --note-red-title-bg: #4e1e1e;
   --note-cyan-title-bg: #1e4e4e;
@@ -396,13 +396,13 @@
   color: var(--default-text-color);
 }
 .post-page-container .article-content-container .article-header .info .author .author-label {
-  margin-left: 10px;
+  margin-left: 5px;
   font-size: 0.8rem;
   font-weight: 500;
-  padding: 0 5px;
+  padding: 2px 8px;
   border-radius: 9px;
-  color: #fff;
-  background: var(--selection-color);
+  color: var(--third-text-color);
+  border: 1px solid var(--shadow-color-1);
 }
 .post-page-container .article-content-container .article-header,
 .post-page-container .article-content-container .article-header-meta-info {
@@ -529,13 +529,14 @@
   overflow: visible !important;
 }
 .post-page-container .article-content-container .recommended-article .recommended-article-header {
-  margin: 2rem 0 0.8rem 0;
-  font-size: 1.2rem;
-  font-weight: bold;
+  font-size: 28px;
+  font-weight: 550;
+  margin-top: 2.8rem;
 }
 .post-page-container .article-content-container .recommended-article .recommended-article-group {
-  padding: 10px;
+  padding: 10px 0;
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   overflow: visible !important;
 }
@@ -558,24 +559,10 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  width: calc(100%/3 - 18px);
+  width: 32%;
   max-height: 200px;
   margin-top: 15px;
-  margin-left: 15px;
   margin-right: 0;
-}
-@media screen and (max-width: $device-tablet) {
-  .post-page-container .article-content-container .recommended-article .recommended-article-group .recommended-article-item {
-    width: calc(100%/2 - 18px);
-  }
-}
-@media screen and (max-width: $device-mobile) {
-  .post-page-container .article-content-container .recommended-article .recommended-article-group .recommended-article-item {
-    width: calc(100% - 18px);
-  }
-}
-.post-page-container .article-content-container .recommended-article .recommended-article-group .recommended-article-item:nth-child(3n+1) {
-  margin-left: 0 !important;
 }
 .post-page-container .article-content-container .recommended-article .recommended-article-group .recommended-article-item img {
   display: flex;
@@ -616,4 +603,16 @@
     left: 0 !important;
     display: none !important;
   }
+}
+@media (prefers-color-scheme: dark) {
+  .article-title img {
+    filter: brightness(0.7);
+    -webkit-filter: brightness(0.7);
+    transition: filter 0.3s ease;
+  }
+}
+.dark-mode .article-title img {
+  filter: brightness(0.7);
+  -webkit-filter: brightness(0.7);
+  transition: filter 0.3s ease;
 }
