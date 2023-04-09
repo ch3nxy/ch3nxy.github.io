@@ -7778,10 +7778,6 @@ pre .deletion {
   box-sizing: border-box;
   background: var(--background-color);
   box-shadow: var(--redefine-box-shadow);
-  transition-property: color, background, box-shadow, border-color, transform;
-  transition-delay: 0s, 0s, 0s, 0s, 0s;
-  transition-duration: 0.2s, 0.2s, 0.2s, 0.2s, 0.2s;
-  transition-timing-function: ease, ease, ease, ease, linear;
 }
 .home-sidebar-container .sidebar-content:hover {
   box-shadow: var(--redefine-box-shadow-hover);
@@ -7861,10 +7857,6 @@ pre .deletion {
   box-sizing: border-box;
   background: var(--background-color);
   box-shadow: var(--redefine-box-shadow);
-  transition-property: color, background, box-shadow, border-color, transform;
-  transition-delay: 0s, 0s, 0s, 0s, 0s;
-  transition-duration: 0.2s, 0.2s, 0.2s, 0.2s, 0.2s;
-  transition-timing-function: ease, ease, ease, ease, linear;
 }
 .home-sidebar-container .sidebar-links:hover {
   box-shadow: var(--redefine-box-shadow-hover);
