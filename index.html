@@ -54,7 +54,7 @@
     <script id="hexo-configurations">
     let Global = window.Global || {};
     Global.hexo_config = {"hostname":"example.com","root":"/","language":"zh-CN"};
-    Global.theme_config = {"articles":{"style":{"font_size":"16px","line_height":1.5,"image_border_radius":"14px","image_alignment":"center"},"word_count":{"enable":true,"count":true,"min2read":true},"author_label":{"enable":true,"auto":true,"list":[""]},"code_block":{"copy":true,"style":"mac","font":{"enable":false,"family":null,"url":null}},"toc":{"enable":true,"max_depth":6,"number":false,"expand":true,"init_open":true},"copyright":true,"lazyload":true,"recommendation":{"enable":false,"title":"推荐阅读","limit":3,"placeholder":"/images/wallhaven-wqery6-light.webp","skip_dirs":[]}},"colors":{"primary":"#1976d2","secondary":null},"global":{"fonts":{"chinese":{"enable":false,"family":null,"url":null},"english":{"enable":false,"family":null,"url":null}},"content_max_width":"1000px","sidebar_width":"210px","hover":{"shadow":true,"scale":false},"scroll_progress":{"bar":false,"percentage":false},"busuanzi_counter":{"enable":false,"site_pv":true,"site_uv":true,"post_pv":true},"pjax":true,"open_graph":true},"home_banner":{"enable":true,"image":{"light":"https://cdn.staticaly.com/gh/ch3nxy/upload_large_file@main/background_image_light.webp","dark":"https://cdn.staticaly.com/gh/ch3nxy/upload_large_file@main/oleksij-luchnikov-outskirts-luchnikov.webp"},"title":"chen","subtitle":{"text":["与谁同坐","明月清风我"],"typing_speed":100,"backing_speed":80,"starting_delay":500,"backing_delay":1500,"loop":true,"smart_backspace":true},"text_color":{"light":"#fff","dark":"#d1d1b6"},"text_style":{"title_size":"2.8rem","subtitle_size":"1.5rem","line_height":1.2},"custom_font":{"enable":false,"family":null,"url":null},"social_links":{"enable":false,"links":{"github":null,"instagram":null,"zhihu":null,"twitter":null,"email":null}}},"plugins":{"feed":{"enable":false},"aplayer":{"enable":false,"type":"fixed","audios":[{"name":null,"artist":null,"url":null,"cover":null},{"name":null,"artist":null,"url":null,"cover":null}]},"mermaid":{"enable":false,"version":"9.3.0"}},"version":"2.1.1","navbar":{"auto_hide":false,"color":{"left":"#BC95C6","right":"#7DC4CC","transparency":60},"links":{"Home":{"path":"/","icon":"fa-regular fa-house"},"Archives":{"path":"/archives","icon":"fa-regular fa-archive"},"Categories":{"icon":"fa-regular fa-folder","path":"/categories"},"Tags":{"icon":"fa-regular fa-tags","path":"/tags"},"About":{"icon":"fa-regular fa-user","path":"/about"}},"search":{"enable":false,"preload":true}},"page_templates":{"friends_column":2,"tags_style":"blur"},"home":{"sidebar":{"enable":true,"position":"left","announcement":null,"links":null},"article_date_format":"YYYY-MM-DD","categories":{"enable":true,"limit":3},"tags":{"enable":true,"limit":3}}};
+    Global.theme_config = {"articles":{"style":{"font_size":"16px","line_height":1.5,"image_border_radius":"14px","image_alignment":"center","image_caption":false,"link_icon":true},"word_count":{"enable":true,"count":true,"min2read":true},"author_label":{"enable":true,"auto":true,"list":[""]},"code_block":{"copy":true,"style":"mac","font":{"enable":false,"family":null,"url":null}},"toc":{"enable":true,"max_depth":6,"number":false,"expand":true,"init_open":true},"copyright":true,"lazyload":true,"recommendation":{"enable":false,"title":"推荐阅读","limit":3,"placeholder":"/images/wallhaven-wqery6-light.webp","skip_dirs":[]}},"colors":{"primary":"#1976d2","secondary":null},"global":{"fonts":{"chinese":{"enable":false,"family":null,"url":null},"english":{"enable":false,"family":null,"url":null}},"content_max_width":"1000px","sidebar_width":"210px","hover":{"shadow":true,"scale":false},"scroll_progress":{"bar":false,"percentage":false},"busuanzi_counter":{"enable":false,"site_pv":true,"site_uv":true,"post_pv":true},"pjax":true,"open_graph":true},"home_banner":{"enable":true,"image":{"light":"https://cdn.staticaly.com/gh/ch3nxy/upload_large_file@main/background_image_light.webp","dark":"https://cdn.staticaly.com/gh/ch3nxy/upload_large_file@main/oleksij-luchnikov-outskirts-luchnikov.webp"},"title":"chen","subtitle":{"text":["与谁同坐","明月清风我"],"hitokoto":{"enable":false,"api":"https://v1.hitokoto.cn"},"typing_speed":100,"backing_speed":80,"starting_delay":500,"backing_delay":1500,"loop":true,"smart_backspace":true},"text_color":{"light":"#fff","dark":"#d1d1b6"},"text_style":{"title_size":"2.8rem","subtitle_size":"1.5rem","line_height":1.2},"custom_font":{"enable":false,"family":null,"url":null},"social_links":{"enable":false,"links":{"github":null,"instagram":null,"zhihu":null,"twitter":null,"email":null}}},"plugins":{"feed":{"enable":false},"aplayer":{"enable":false,"type":"fixed","audios":[{"name":null,"artist":null,"url":null,"cover":null},{"name":null,"artist":null,"url":null,"cover":null}]},"mermaid":{"enable":false,"version":"9.3.0"}},"version":"2.1.2","navbar":{"auto_hide":false,"color":{"left":"#BC95C6","right":"#7DC4CC","transparency":60},"links":{"Home":{"path":"/","icon":"fa-regular fa-house"},"Archives":{"path":"/archives","icon":"fa-regular fa-archive"},"Categories":{"icon":"fa-regular fa-folder","path":"/categories"},"Tags":{"icon":"fa-regular fa-tags","path":"/tags"},"About":{"icon":"fa-regular fa-user","path":"/about"}},"search":{"enable":false,"preload":true}},"page_templates":{"friends_column":2,"tags_style":"blur"},"home":{"sidebar":{"enable":true,"position":"left","first_item":"menu","announcement":null,"links":null},"article_date_format":"YYYY-MM-DD","categories":{"enable":true,"limit":3},"tags":{"enable":true,"limit":3}}};
     Global.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"};
   </script>
     
@@ -317,31 +317,33 @@
                 <div class="home-sidebar-container fade-in-down-animation">
     <div class="sticky-container">
         
-        <div class="sidebar-content" >
-            <div class="avatar">
-                <img src="/images/avatar.gif">
+            
+            <div class="sidebar-content" >
+                <div class="avatar">
+                    <img src="/images/avatar.gif">
+                </div>
+                <div class="author">
+                    <div class="name">chen</div>
+                    
+                        <div class="label">Lv2</div>
+                    
+                </div>
+                <div class="statistics">
+                    <a class="item" href="/tags">
+                        <div class="number">2</div>
+                        <div class="label">标签</div>
+                    </a>
+                    <a class="item" href="/categories">
+                        <div class="number">2</div>
+                        <div class="label">分类</div>
+                    </a>
+                    <a class="item" href="/archives">
+                        <div class="number">10</div>
+                        <div class="label">文章</div>
+                    </a>
+                </div>
             </div>
-            <div class="author">
-                <div class="name">chen</div>
-                
-                    <div class="label">Lv2</div>
-                
-            </div>
-            <div class="statistics">
-                <a class="item" href="/tags">
-                    <div class="number">1</div>
-                    <div class="label">标签</div>
-                </a>
-                <a class="item" href="/categories">
-                    <div class="number">2</div>
-                    <div class="label">分类</div>
-                </a>
-                <a class="item" href="/archives">
-                    <div class="number">9</div>
-                    <div class="label">文章</div>
-                </a>
-            </div>
-        </div>
+        
 
     </div>
 </div>
@@ -360,22 +362,103 @@
 
                 
                     <div class="home-article-thumbnail">
-                        <a href="/2023/04/12/Airi%20Pan%E7%BB%98%E7%94%BB%E6%95%99%E7%A8%8BLesson_9/">
-                            <img src="https://cdn.staticaly.com/gh/ch3nxy/upload_large_file@main/airi-pan-uchouten-kazoku-8-2020-02-edits-small.webp" alt="Airi Pan绘画教程 Lesson 9 - Industry and More" />
+                        <a href="/2023/04/12/Arucelli%E8%A7%92%E8%89%B2%E8%AE%BE%E8%AE%A1Lesson_1/">
+                            <img src="https://cdn.staticaly.com/gh/ch3nxy/upload_large_file@main/2023-04-12211933.webp" alt="Arucelli角色设计 Lesson_1" />
                         </a>
                     </div>
                 
 
                 <h3 class="home-article-title">
-                    <a href="/2023/04/12/Airi%20Pan%E7%BB%98%E7%94%BB%E6%95%99%E7%A8%8BLesson_9/">
-                        Airi Pan绘画教程 Lesson 9 - Industry and More
+                    <a href="/2023/04/12/Arucelli%E8%A7%92%E8%89%B2%E8%AE%BE%E8%AE%A1Lesson_1/">
+                        Arucelli角色设计 Lesson_1
+                    </a>
+                </h3>
+
+                <div class="home-article-content markdown-body">
+                    
+                        1_1_Basic overview of skeleton （骨架基本概述）
+superior: 上半身
+inferior: 下半身
+anterior: 前面
+posterior: 后面
+medial: 内侧
+lateral: 外侧
+
+
+1_3_D...
+                    
+                </div>
+
+                <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Wed Apr 12 2023 17:42:41 GMT+0800">
+                
+                    2023-04-12
+                
+            </span>
+        </span>
+        
+            <span class="home-article-category"><i class="fa-solid fa-folders"></i></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/categories/%E6%95%99%E7%A8%8B/">教程</a>&nbsp;
+                        </li>
+                    
+                    
+                        <li>
+                            &gt; 
+                            <a href="/categories/%E6%95%99%E7%A8%8B/%E7%BB%98%E7%94%BB/">绘画</a>&nbsp;
+                        </li>
+                    
+                    
+                </ul>
+            </span>
+        
+        
+            <span class="home-article-tag">
+                <i class="fa-solid fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/tags/Arucelli/">Arucelli</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            </span>
+        
+    </div>
+
+    <a href="/2023/04/12/Arucelli%E8%A7%92%E8%89%B2%E8%AE%BE%E8%AE%A1Lesson_1/">阅读全文<span class="seo-reader-text">Arucelli角色设计 Lesson_1</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+</div>
+
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                
+                    <div class="home-article-thumbnail">
+                        <a href="/2023/04/12/Airi%20Pan%E6%8F%92%E7%94%BB%E6%95%99%E7%A8%8BLesson_9/">
+                            <img src="https://cdn.staticaly.com/gh/ch3nxy/upload_large_file@main/airi-pan-uchouten-kazoku-8-2020-02-edits-small.webp" alt="Airi Pan插画教程 Lesson 9 - Industry and More" />
+                        </a>
+                    </div>
+                
+
+                <h3 class="home-article-title">
+                    <a href="/2023/04/12/Airi%20Pan%E6%8F%92%E7%94%BB%E6%95%99%E7%A8%8BLesson_9/">
+                        Airi Pan插画教程 Lesson 9 - Industry and More
                     </a>
                 </h3>
 
                 <div class="home-article-content markdown-body">
                     
                         53 Part 1 - Final Application - One! Giant!! （课程回顾）用黑白感知距离关系，而不是颜色
-生理健康和生理健康一样重要
+心理健康和生理健康一样重要
 57 Part 5 - Closing Letter （结束函）要时刻保持对绘画的热情加...
                     
                 </div>
@@ -423,7 +506,7 @@
         
     </div>
 
-    <a href="/2023/04/12/Airi%20Pan%E7%BB%98%E7%94%BB%E6%95%99%E7%A8%8BLesson_9/">阅读全文<span class="seo-reader-text">Airi Pan绘画教程 Lesson 9 - Industry and More</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+    <a href="/2023/04/12/Airi%20Pan%E6%8F%92%E7%94%BB%E6%95%99%E7%A8%8BLesson_9/">阅读全文<span class="seo-reader-text">Airi Pan插画教程 Lesson 9 - Industry and More</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
 </div>
 
             </li>
@@ -434,15 +517,15 @@
 
                 
                     <div class="home-article-thumbnail">
-                        <a href="/2023/04/10/Airi%20Pan%E7%BB%98%E7%94%BB%E6%95%99%E7%A8%8BLesson_8/">
-                            <img src="https://cdn.staticaly.com/gh/ch3nxy/upload_large_file@main/airi-pan-airipan-maysketch2021-15.webp" alt="Airi Pan绘画教程 Lesson 8 - Speedpainting" />
+                        <a href="/2023/04/10/Airi%20Pan%E6%8F%92%E7%94%BB%E6%95%99%E7%A8%8BLesson_8/">
+                            <img src="https://cdn.staticaly.com/gh/ch3nxy/upload_large_file@main/airi-pan-airipan-maysketch2021-15.webp" alt="Airi Pan插画教程 Lesson 8 - Speedpainting" />
                         </a>
                     </div>
                 
 
                 <h3 class="home-article-title">
-                    <a href="/2023/04/10/Airi%20Pan%E7%BB%98%E7%94%BB%E6%95%99%E7%A8%8BLesson_8/">
-                        Airi Pan绘画教程 Lesson 8 - Speedpainting
+                    <a href="/2023/04/10/Airi%20Pan%E6%8F%92%E7%94%BB%E6%95%99%E7%A8%8BLesson_8/">
+                        Airi Pan插画教程 Lesson 8 - Speedpainting
                     </a>
                 </h3>
 
@@ -499,7 +582,7 @@
         
     </div>
 
-    <a href="/2023/04/10/Airi%20Pan%E7%BB%98%E7%94%BB%E6%95%99%E7%A8%8BLesson_8/">阅读全文<span class="seo-reader-text">Airi Pan绘画教程 Lesson 8 - Speedpainting</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+    <a href="/2023/04/10/Airi%20Pan%E6%8F%92%E7%94%BB%E6%95%99%E7%A8%8BLesson_8/">阅读全文<span class="seo-reader-text">Airi Pan插画教程 Lesson 8 - Speedpainting</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
 </div>
 
             </li>
@@ -510,15 +593,15 @@
 
                 
                     <div class="home-article-thumbnail">
-                        <a href="/2023/04/03/Airi%20Pan%E7%BB%98%E7%94%BB%E6%95%99%E7%A8%8BLesson_7/">
-                            <img src="https://cdn.staticaly.com/gh/ch3nxy/upload_large_file@main/airi-pan-seattle-bunny-tobi-airipan-small-02-23.webp" alt="Airi Pan绘画教程 Lesson 7 - Painting Combined with Photos" />
+                        <a href="/2023/04/03/Airi%20Pan%E6%8F%92%E7%94%BB%E6%95%99%E7%A8%8BLesson_7/">
+                            <img src="https://cdn.staticaly.com/gh/ch3nxy/upload_large_file@main/airi-pan-seattle-bunny-tobi-airipan-small-02-23.webp" alt="Airi Pan插画教程 Lesson 7 - Painting Combined with Photos" />
                         </a>
                     </div>
                 
 
                 <h3 class="home-article-title">
-                    <a href="/2023/04/03/Airi%20Pan%E7%BB%98%E7%94%BB%E6%95%99%E7%A8%8BLesson_7/">
-                        Airi Pan绘画教程 Lesson 7 - Painting Combined with Photos
+                    <a href="/2023/04/03/Airi%20Pan%E6%8F%92%E7%94%BB%E6%95%99%E7%A8%8BLesson_7/">
+                        Airi Pan插画教程 Lesson 7 - Painting Combined with Photos
                     </a>
                 </h3>
 
@@ -575,7 +658,7 @@ Pixelstains Perspective Grid Brushes by pixelstains on Devi...
         
     </div>
 
-    <a href="/2023/04/03/Airi%20Pan%E7%BB%98%E7%94%BB%E6%95%99%E7%A8%8BLesson_7/">阅读全文<span class="seo-reader-text">Airi Pan绘画教程 Lesson 7 - Painting Combined with Photos</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+    <a href="/2023/04/03/Airi%20Pan%E6%8F%92%E7%94%BB%E6%95%99%E7%A8%8BLesson_7/">阅读全文<span class="seo-reader-text">Airi Pan插画教程 Lesson 7 - Painting Combined with Photos</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
 </div>
 
             </li>
@@ -586,15 +669,15 @@ Pixelstains Perspective Grid Brushes by pixelstains on Devi...
 
                 
                     <div class="home-article-thumbnail">
-                        <a href="/2023/03/29/Airi%20Pan%E7%BB%98%E7%94%BB%E6%95%99%E7%A8%8BLesson_6/">
-                            <img src="https://cdn.staticaly.com/gh/ch3nxy/upload_large_file@main/airi-pan-final-interior07-with-adjustments-small.webp" alt="Airi Pan绘画教程 Lesson 6 - Foolproof Photobashing" />
+                        <a href="/2023/03/29/Airi%20Pan%E6%8F%92%E7%94%BB%E6%95%99%E7%A8%8BLesson_6/">
+                            <img src="https://cdn.staticaly.com/gh/ch3nxy/upload_large_file@main/airi-pan-final-interior07-with-adjustments-small.webp" alt="Airi Pan插画教程 Lesson 6 - Foolproof Photobashing" />
                         </a>
                     </div>
                 
 
                 <h3 class="home-article-title">
-                    <a href="/2023/03/29/Airi%20Pan%E7%BB%98%E7%94%BB%E6%95%99%E7%A8%8BLesson_6/">
-                        Airi Pan绘画教程 Lesson 6 - Foolproof Photobashing
+                    <a href="/2023/03/29/Airi%20Pan%E6%8F%92%E7%94%BB%E6%95%99%E7%A8%8BLesson_6/">
+                        Airi Pan插画教程 Lesson 6 - Foolproof Photobashing
                     </a>
                 </h3>
 
@@ -650,7 +733,7 @@ What is Photobashing? – Artlex
         
     </div>
 
-    <a href="/2023/03/29/Airi%20Pan%E7%BB%98%E7%94%BB%E6%95%99%E7%A8%8BLesson_6/">阅读全文<span class="seo-reader-text">Airi Pan绘画教程 Lesson 6 - Foolproof Photobashing</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+    <a href="/2023/03/29/Airi%20Pan%E6%8F%92%E7%94%BB%E6%95%99%E7%A8%8BLesson_6/">阅读全文<span class="seo-reader-text">Airi Pan插画教程 Lesson 6 - Foolproof Photobashing</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
 </div>
 
             </li>
@@ -661,15 +744,15 @@ What is Photobashing? – Artlex
 
                 
                     <div class="home-article-thumbnail">
-                        <a href="/2023/03/23/Airi%20Pan%E7%BB%98%E7%94%BB%E6%95%99%E7%A8%8BLesson_5/">
-                            <img src="https://cdn.staticaly.com/gh/ch3nxy/upload_large_file@main/airi-pan-airipan-mothproject-010.webp" alt="Airi Pan绘画教程 Lesson 5 - Photobashing Basics" />
+                        <a href="/2023/03/23/Airi%20Pan%E6%8F%92%E7%94%BB%E6%95%99%E7%A8%8BLesson_5/">
+                            <img src="https://cdn.staticaly.com/gh/ch3nxy/upload_large_file@main/airi-pan-airipan-mothproject-010.webp" alt="Airi Pan插画教程 Lesson 5 - Photobashing Basics" />
                         </a>
                     </div>
                 
 
                 <h3 class="home-article-title">
-                    <a href="/2023/03/23/Airi%20Pan%E7%BB%98%E7%94%BB%E6%95%99%E7%A8%8BLesson_5/">
-                        Airi Pan绘画教程 Lesson 5 - Photobashing Basics
+                    <a href="/2023/03/23/Airi%20Pan%E6%8F%92%E7%94%BB%E6%95%99%E7%A8%8BLesson_5/">
+                        Airi Pan插画教程 Lesson 5 - Photobashing Basics
                     </a>
                 </h3>
 
@@ -727,7 +810,7 @@ What is Photobashing? – Artlex
         
     </div>
 
-    <a href="/2023/03/23/Airi%20Pan%E7%BB%98%E7%94%BB%E6%95%99%E7%A8%8BLesson_5/">阅读全文<span class="seo-reader-text">Airi Pan绘画教程 Lesson 5 - Photobashing Basics</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+    <a href="/2023/03/23/Airi%20Pan%E6%8F%92%E7%94%BB%E6%95%99%E7%A8%8BLesson_5/">阅读全文<span class="seo-reader-text">Airi Pan插画教程 Lesson 5 - Photobashing Basics</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
 </div>
 
             </li>
@@ -738,15 +821,15 @@ What is Photobashing? – Artlex
 
                 
                     <div class="home-article-thumbnail">
-                        <a href="/2023/03/17/Airi%20Pan%E7%BB%98%E7%94%BB%E6%95%99%E7%A8%8BLesson_4/">
-                            <img src="https://cdn.staticaly.com/gh/ch3nxy/upload_large_file@main/airi-pan-venice-chase-airi-pan-small.webp" alt="Airi Pan绘画教程 Lesson 4 - Classic VisDev Painting" />
+                        <a href="/2023/03/17/Airi%20Pan%E6%8F%92%E7%94%BB%E6%95%99%E7%A8%8BLesson_4/">
+                            <img src="https://cdn.staticaly.com/gh/ch3nxy/upload_large_file@main/airi-pan-venice-chase-airi-pan-small.webp" alt="Airi Pan插画教程 Lesson 4 - Classic VisDev Painting" />
                         </a>
                     </div>
                 
 
                 <h3 class="home-article-title">
-                    <a href="/2023/03/17/Airi%20Pan%E7%BB%98%E7%94%BB%E6%95%99%E7%A8%8BLesson_4/">
-                        Airi Pan绘画教程 Lesson 4 - Classic VisDev Painting
+                    <a href="/2023/03/17/Airi%20Pan%E6%8F%92%E7%94%BB%E6%95%99%E7%A8%8BLesson_4/">
+                        Airi Pan插画教程 Lesson 4 - Classic VisDev Painting
                     </a>
                 </h3>
 
@@ -800,7 +883,7 @@ What is Photobashing? – Artlex
         
     </div>
 
-    <a href="/2023/03/17/Airi%20Pan%E7%BB%98%E7%94%BB%E6%95%99%E7%A8%8BLesson_4/">阅读全文<span class="seo-reader-text">Airi Pan绘画教程 Lesson 4 - Classic VisDev Painting</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+    <a href="/2023/03/17/Airi%20Pan%E6%8F%92%E7%94%BB%E6%95%99%E7%A8%8BLesson_4/">阅读全文<span class="seo-reader-text">Airi Pan插画教程 Lesson 4 - Classic VisDev Painting</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
 </div>
 
             </li>
@@ -811,15 +894,15 @@ What is Photobashing? – Artlex
 
                 
                     <div class="home-article-thumbnail">
-                        <a href="/2023/03/16/Airi%20Pan%E7%BB%98%E7%94%BB%E6%95%99%E7%A8%8BLesson_3/">
-                            <img src="https://cdn.staticaly.com/gh/ch3nxy/upload_large_file@main/airi-pan-hearth-airi-pan-small.webp" alt="Airi Pan绘画教程 Lesson 3 - Perfect Color and Light, Each Time" />
+                        <a href="/2023/03/16/Airi%20Pan%E6%8F%92%E7%94%BB%E6%95%99%E7%A8%8BLesson_3/">
+                            <img src="https://cdn.staticaly.com/gh/ch3nxy/upload_large_file@main/airi-pan-hearth-airi-pan-small.webp" alt="Airi Pan插画教程 Lesson 3 - Perfect Color and Light, Each Time" />
                         </a>
                     </div>
                 
 
                 <h3 class="home-article-title">
-                    <a href="/2023/03/16/Airi%20Pan%E7%BB%98%E7%94%BB%E6%95%99%E7%A8%8BLesson_3/">
-                        Airi Pan绘画教程 Lesson 3 - Perfect Color and Light, Each Time
+                    <a href="/2023/03/16/Airi%20Pan%E6%8F%92%E7%94%BB%E6%95%99%E7%A8%8BLesson_3/">
+                        Airi Pan插画教程 Lesson 3 - Perfect Color and Light, Each Time
                     </a>
                 </h3>
 
@@ -874,7 +957,7 @@ What is Photobashing? – Artlex
         
     </div>
 
-    <a href="/2023/03/16/Airi%20Pan%E7%BB%98%E7%94%BB%E6%95%99%E7%A8%8BLesson_3/">阅读全文<span class="seo-reader-text">Airi Pan绘画教程 Lesson 3 - Perfect Color and Light, Each Time</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+    <a href="/2023/03/16/Airi%20Pan%E6%8F%92%E7%94%BB%E6%95%99%E7%A8%8BLesson_3/">阅读全文<span class="seo-reader-text">Airi Pan插画教程 Lesson 3 - Perfect Color and Light, Each Time</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
 </div>
 
             </li>
@@ -885,15 +968,15 @@ What is Photobashing? – Artlex
 
                 
                     <div class="home-article-thumbnail">
-                        <a href="/2023/03/16/Airi%20Pan%E7%BB%98%E7%94%BB%E6%95%99%E7%A8%8BLesson_2/">
-                            <img src="https://cdn.staticaly.com/gh/ch3nxy/upload_large_file@main/airi-pan-hades-greece-03-small.webp" alt="Airi Pan绘画教程 Lesson 2 - Crash Course Composition" />
+                        <a href="/2023/03/16/Airi%20Pan%E6%8F%92%E7%94%BB%E6%95%99%E7%A8%8BLesson_2/">
+                            <img src="https://cdn.staticaly.com/gh/ch3nxy/upload_large_file@main/airi-pan-hades-greece-03-small.webp" alt="Airi Pan插画教程 Lesson 2 - Crash Course Composition" />
                         </a>
                     </div>
                 
 
                 <h3 class="home-article-title">
-                    <a href="/2023/03/16/Airi%20Pan%E7%BB%98%E7%94%BB%E6%95%99%E7%A8%8BLesson_2/">
-                        Airi Pan绘画教程 Lesson 2 - Crash Course Composition
+                    <a href="/2023/03/16/Airi%20Pan%E6%8F%92%E7%94%BB%E6%95%99%E7%A8%8BLesson_2/">
+                        Airi Pan插画教程 Lesson 2 - Crash Course Composition
                     </a>
                 </h3>
 
@@ -949,7 +1032,7 @@ What is Photobashing? – Artlex
         
     </div>
 
-    <a href="/2023/03/16/Airi%20Pan%E7%BB%98%E7%94%BB%E6%95%99%E7%A8%8BLesson_2/">阅读全文<span class="seo-reader-text">Airi Pan绘画教程 Lesson 2 - Crash Course Composition</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+    <a href="/2023/03/16/Airi%20Pan%E6%8F%92%E7%94%BB%E6%95%99%E7%A8%8BLesson_2/">阅读全文<span class="seo-reader-text">Airi Pan插画教程 Lesson 2 - Crash Course Composition</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
 </div>
 
             </li>
@@ -960,15 +1043,15 @@ What is Photobashing? – Artlex
 
                 
                     <div class="home-article-thumbnail">
-                        <a href="/2023/03/16/Airi%20Pan%E7%BB%98%E7%94%BB%E6%95%99%E7%A8%8BLesson_1/">
-                            <img src="https://cdn.staticaly.com/gh/ch3nxy/upload_large_file@main/download.2db0df9o1rms.webp" alt="Airi Pan绘画教程 Lesson 1 - Values" />
+                        <a href="/2023/03/16/Airi%20Pan%E6%8F%92%E7%94%BB%E6%95%99%E7%A8%8BLesson_1/">
+                            <img src="https://cdn.staticaly.com/gh/ch3nxy/upload_large_file@main/download.2db0df9o1rms.webp" alt="Airi Pan插画教程 Lesson 1 - Values" />
                         </a>
                     </div>
                 
 
                 <h3 class="home-article-title">
-                    <a href="/2023/03/16/Airi%20Pan%E7%BB%98%E7%94%BB%E6%95%99%E7%A8%8BLesson_1/">
-                        Airi Pan绘画教程 Lesson 1 - Values
+                    <a href="/2023/03/16/Airi%20Pan%E6%8F%92%E7%94%BB%E6%95%99%E7%A8%8BLesson_1/">
+                        Airi Pan插画教程 Lesson 1 - Values
                     </a>
                 </h3>
 
@@ -1025,7 +1108,7 @@ What is Photobashing? – Artlex
         
     </div>
 
-    <a href="/2023/03/16/Airi%20Pan%E7%BB%98%E7%94%BB%E6%95%99%E7%A8%8BLesson_1/">阅读全文<span class="seo-reader-text">Airi Pan绘画教程 Lesson 1 - Values</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+    <a href="/2023/03/16/Airi%20Pan%E6%8F%92%E7%94%BB%E6%95%99%E7%A8%8BLesson_1/">阅读全文<span class="seo-reader-text">Airi Pan插画教程 Lesson 1 - Values</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
 </div>
 
             </li>
@@ -1063,7 +1146,7 @@ What is Photobashing? – Artlex
         <div class="theme-info info-item">
             <span class="powered-by-container">由 <?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1rem" height="1rem" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><path fill="#0E83CD" d="M256.4,25.8l-200,115.5L56,371.5l199.6,114.7l200-115.5l0.4-230.2L256.4,25.8z M349,354.6l-18.4,10.7l-18.6-11V275H200v79.6l-18.4,10.7l-18.6-11v-197l18.5-10.6l18.5,10.8V237h112v-79.6l18.5-10.6l18.5,10.8V354.6z"/></svg><a target="_blank" href="https://hexo.io">Hexo</a> 驱动</span>
                 <br>
-            <span class="theme-version-container">主题&nbsp;<a class="theme-version" target="_blank" href="https://github.com/EvanNotFound/hexo-theme-redefine">Redefine v2.1.1</a>
+            <span class="theme-version-container">主题&nbsp;<a class="theme-version" target="_blank" href="https://github.com/EvanNotFound/hexo-theme-redefine">Redefine v2.1.2</a>
         </div>
         
         
